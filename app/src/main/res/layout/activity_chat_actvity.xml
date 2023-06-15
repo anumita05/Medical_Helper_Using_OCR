@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ChatActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/sendMessageV"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            >
+            <EditText
+                android:id="@+id/chatMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:hint="Enter Your Message Here"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="10dp"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/chat_edit_drawable"
+                />
+            <ImageView
+                android:id="@+id/sendMessage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/send_button"
+                android:src="@drawable/ic_send"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sendMessageV"/>
+
+
+</RelativeLayout>

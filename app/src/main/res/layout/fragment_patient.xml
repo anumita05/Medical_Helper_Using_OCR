@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserFragment">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/patient_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <ListView
+        android:id="@+id/list_patient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryDarkColor"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:padding="5dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

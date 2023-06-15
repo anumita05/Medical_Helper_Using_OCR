@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".patient.TabletFragment">
+
+    <ListView
+        android:id="@+id/tablets_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryDarkColor"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:padding="5dp"
+        android:scrollbars="none"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addMedicines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_add"
+        app:backgroundTint="@color/colorLightBlue"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
+</android.support.constraint.ConstraintLayout>

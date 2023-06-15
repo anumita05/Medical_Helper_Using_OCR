@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:gravity="center"
+    android:background="@drawable/loading_dialog">
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        />
+
+</RelativeLayout>
